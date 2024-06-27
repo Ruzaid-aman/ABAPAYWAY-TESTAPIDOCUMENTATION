@@ -8,3 +8,261 @@ description: 'Start building awesome documentation in under 5 minutes'
 Learn how to update your docs locally and and deploy them to the public.
 
 ### Edit and preview
+
+<Accordion title="I am an Accordion.">
+  You can put any content in here.
+</Accordion>
+
+### Accordion-group
+
+<AccordionGroup>
+  <Accordion title="FAQ without Icon">
+    You can put other components inside Accordions.
+
+    ```java HelloWorld.java
+    class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+
+  </Accordion>
+
+  <Accordion title="FAQ with Icon" icon="alien-8bit">
+    Check out the [Accordion](/content/components/accordions) docs for all the supported props.
+    
+  </Accordion>
+
+  <Accordion title="FAQ without Icon">
+    Check out the [Accordion](/content/components/accordions) docs for all the supported props.
+    <Check>This brings us a checked status</Check>
+  </Accordion>
+</AccordionGroup>
+
+
+<Note>This adds a note in the content -- 
+Note Callouts </Note>
+
+
+
+<Info>This draws attention to important information</Info>
+
+<Tip>This suggests a helpful tip</Tip>
+
+
+
+<Card title="Click on me" icon="wifi" href="/content/components/card-group">
+  This is how you use a card with an icon and a link. Clicking on this card
+  brings you to the Card Group page.
+</Card>
+
+
+<Card title="Colored Card" icon="lightbulb" iconType="duotone" color="#ca8b04">
+  Here is a card with a duotone yellow icon
+</Card>
+
+
+<CardGroup cols={3}>
+  <Card title="First Card" icon="square-1">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </Card>
+  <Card title="Second Card" icon="square-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Third Card" icon="square-3">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+  <Card title="Fourth Card" icon="square-4">
+    Excepteur sint occaecat cupidatat non proident
+  </Card>
+  <Card title="Colored Card" icon="lightbulb" iconType="duotone" color="#ca8b04">
+  Here is a card with a duotone yellow icon
+</Card>
+</CardGroup>
+
+
+<CodeGroup>
+
+```javascript helloWorld.js
+console.log("Hello World");
+```
+
+```python hello_world.py
+print('Hello World!')
+```
+
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+```ninjacode helloWorld.nj
+dox.log("Hello World");
+```
+
+</CodeGroup>
+
+
+----
+
+
+<Frame type="glass">
+  <img src="https://www.dictionary.com/e/wp-content/uploads/2021/03/20210310_luck_1000x700-790x310.jpg" />
+</Frame>
+
+
+
+
+
+
+
+
+
+
+
+
+<Tabs>
+  <Tab title="First Tab">
+    ☝️ Welcome to the content that you can only see inside the first Tab.
+    <Steps>
+  <Step title="First Step">
+    These are instructions or content that only pertain to the first step.
+  </Step>
+  <Step title="Second Step">
+    These are instructions or content that only pertain to the second step.
+  </Step>
+  <Step title="Third Step">
+    These are instructions or content that only pertain to the third step.
+  </Step>
+</Steps>
+  </Tab>
+  <Tab title="Second Tab">
+    ✌️ Here's content that's only inside the second Tab.
+
+    <Icon icon="circle" size={32} />
+
+    ```mermaid
+graph TD;
+    A[Start] --> B[Insert ATM Card];
+    B --> C[Read Card Data];
+    C --> D[Request PIN];
+    D --> E[Enter PIN];
+    E --> F[Validate PIN];
+    F --> G[PIN Validated];
+    G --> H[Select Withdrawal];
+    H --> I[Choose Account Type];
+    I --> J[Request Amount];
+    J --> K[Enter Amount];
+    K --> L[Verify Account Balance];
+    L --> M[Check Cash Availability];
+    M --> N[Proceed if Funds Available];
+    N --> O[Verify Details];
+    O --> P[Confirm Transaction];
+    P --> Q[Authorize Transaction];
+    Q --> R[Process Transaction];
+    R --> S[Dispense Cash];
+    S --> T[Provide Receipt];
+    T --> U[Transaction Complete];
+    U --> V[Deduct Cash from Account];
+    V --> W[Update Account Balance];
+    W --> X[Print Updated Balance];
+    X --> Y[End];
+```
+
+  </Tab>
+  <Tab title="Third Tab">
+    💪 Here's content that's only inside the third Tab.
+
+    ```mermaid
+sequenceDiagram
+    participant User
+    participant ATM
+    participant BankSystem
+    participant CashSystem
+
+    User->>ATM: Insert ATM Card
+    ATM->>BankSystem: Request Card Data
+    BankSystem-->>ATM: Card Data
+    ATM->>User: Request PIN
+    User->>ATM: Enter PIN
+    ATM->>BankSystem: Validate PIN
+    BankSystem-->>ATM: PIN Validated
+    ATM->>User: Select Withdrawal
+    User->>ATM: Choose Account Type
+    ATM->>User: Request Amount
+    User->>ATM: Enter Amount
+    ATM->>BankSystem: Verify Account Balance
+    BankSystem-->>ATM: Balance Verified
+    ATM->>CashSystem: Check Cash Availability
+    CashSystem-->>ATM: Cash Available
+    ATM->>User: Proceed if Funds Available
+    User->>ATM: Verify Details
+    ATM->>User: Confirm Transaction
+    User->>ATM: Authorize Transaction
+    ATM->>BankSystem: Process Transaction
+    BankSystem-->>ATM: Transaction Processed
+    ATM->>CashSystem: Dispense Cash
+    CashSystem-->>ATM: Cash Dispensed
+    ATM->>User: Provide Receipt
+    ATM->>BankSystem: Deduct Cash from Account
+    BankSystem-->>ATM: Cash Deducted
+    ATM->>BankSystem: Update Account Balance
+    BankSystem-->>ATM: Balance Updated
+    ATM->>User: Print Updated Balance
+    ATM->>User: Transaction Complete
+
+```
+
+  </Tab>
+</Tabs>
+
+
+<Tabs>
+  <Tab title="First Tab">
+    ☝️ Welcome to the content that you can only see inside the first Tab.
+    <ParamField path="param" type="string">
+    An example of a parameter field 
+    </ParamField>
+  </Tab>
+  <Tab title="Second Tab">
+    ✌️ Here's content that's only inside the second Tab.
+    <ParamField query="filter" type="string" default="none" required>
+  The filtering command used to sort through the users
+</ParamField>
+  </Tab>
+  <Tab title="Third Tab">
+    💪 Here's content that's only inside the third Tab.
+    <ParamField body="user_age" type="integer" default="0" required>
+  The age of the user. Cannot be less than 0
+</ParamField>
+  </Tab>
+  <Tab title="fourth Tab">
+    💪 Here's content that's only inside the third Tab.
+    <ResponseField name="user" type="User Object">
+  <Expandable title="properties">
+    <ResponseField name="full_name" type="string">
+      The full name of the user
+    </ResponseField>
+
+    <ResponseField name="is_over_21" type="boolean">
+      Whether the user is over 21 years old
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+  </Tab>
+</Tabs>
+
+
+<RequestExample>
+
+```bash Request
+  curl --request POST \
+    --url https://dog-api.kinduff.com/api/facts
+```
+
+</RequestExample>
+
